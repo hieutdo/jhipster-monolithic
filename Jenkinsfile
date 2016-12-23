@@ -12,10 +12,11 @@ node {
         sh "npm -v"
         sh "bower -v"
         sh "gulp -v"
+        sh "yarn -V"
     }
 
-    stage('npm install') {
-        sh "npm install"
+    stage('yarn install') {
+        sh "yarn"
     }
 
     stage('clean') {
