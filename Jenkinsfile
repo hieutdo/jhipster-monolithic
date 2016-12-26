@@ -19,6 +19,10 @@ node {
         sh "yarn"
     }
 
+    stage('bower install') {
+        sh "bower install"
+    }
+
     stage('clean') {
         sh "./mvnw clean"
     }
